@@ -1,0 +1,14 @@
+1 º Package necessários Nuget:
+
+-Microsoft.AspNetCore.Authentication
+-Microsoft.AspNetCore.Authentication.JwtBearer
+
+2º Criar class Settings contendo o secret.
+3º Criar uma class dentro da pasta Service ex: TokenService
+dentro do class Token{ passo as informações necessárias para gerar o token}
+4º Configura o Startup.cs 
+
+add o app.UseAuthentication a cima do 
+app.UseAuthorization.
+
+Sempre primeiro app.UseAuthentication dps app.UseAuthorization.
